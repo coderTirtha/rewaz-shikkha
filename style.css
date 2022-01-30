@@ -272,6 +272,80 @@ header .user-menu ul li a:hover {
     color: var(--yellow);
 }
 
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content {
+    flex: 1 1 48rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box {
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: #3333;
+    color: #fff;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+}
+
+.contact .row form .message {
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3 {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.contact .row .content .info h3 i {
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+
+.contact .row .google-form {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.contact .row .google-form iframe {
+    margin: 3rem 0;
+    width: 100rem;
+    height: 120rem;
+}
+
+.fb-comments {
+    width: 50vw;
+}
+
 .bubbles img {
     width: 50px;
     animation: bubble 4s linear infinite;
@@ -334,6 +408,16 @@ header .user-menu ul li a:hover {
     width: 35px;
 }
 
+.footer {
+    text-align: center;
+}
+
+.footer h5 {
+    color: var(--white);
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+
 @media screen and (max-width: 1200px) {
     html {
         font-size: 55%;
@@ -375,10 +459,33 @@ header .user-menu ul li a:hover {
     .home h3 {
         font-size: 2rem;
     }
+    .about .row .counter .box {
+        width: 100%;
+    }
+    .contact .row .google-form iframe {
+        width: 50rem;
+        height: 120rem;
+    }
+    .contact .row form {
+        margin: 3rem 0;
+    }
+    .contact .row .content .title {
+        font-size: 2.2rem;
+    }
 }
 
 @media screen and (max-width: 380px) {
     .home h3 {
         font-size: 1.8rem;
+    }
+    .contact .row .google-form {
+        padding: 0;
+    }
+    .contact .row .google-form iframe {
+        width: 40rem;
+        height: 100rem;
+    }
+    .contact .row .content .info h3 {
+        font-size: 1.7rem;
     }
 }
