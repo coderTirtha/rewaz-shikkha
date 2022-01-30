@@ -245,6 +245,8 @@ header .user-menu ul li a:hover {
 
 .gallery .photos {
     margin: 3rem 0;
+    padding: 1rem;
+    border-bottom: .1rem solid #fff4;
 }
 
 .gallery .carousel-heading {
@@ -268,6 +270,68 @@ header .user-menu ul li a:hover {
 
 .gallery .carousel-heading p span {
     color: var(--yellow);
+}
+
+.bubbles img {
+    width: 50px;
+    animation: bubble 4s linear infinite;
+    opacity: 0;
+}
+
+.bubbles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -0.5rem;
+    z-index: 1;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1) {
+    animation-delay: 2s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.bubbles img:nth-child(3) {
+    animation-delay: 1s;
+    width: 25px;
+}
+
+.bubbles img:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.bubbles img:nth-child(5) {
+    animation-delay: 4.5s;
+}
+
+.bubbles img:nth-child(6) {
+    animation-delay: 6s;
+    width: 20px;
+}
+
+.bubbles img:nth-child(7) {
+    animation-delay: 3.5s;
+    width: 35px;
 }
 
 @media screen and (max-width: 1200px) {
